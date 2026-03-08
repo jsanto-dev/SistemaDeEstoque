@@ -4,10 +4,22 @@
  */
 package login;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
 /**
  *
  * @author Jhon
  */
-public class Login {
+
+public class Login extends HttpServlet{
     
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        String usuario = request.getParameter("users");
+    }
 }
