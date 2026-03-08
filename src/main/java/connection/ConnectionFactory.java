@@ -15,8 +15,8 @@ public class ConnectionFactory {
         private static final String PASSWORD = "cimatec";
     //Métodos
         
-        public static Connection getConnection(){
-            Connection con = null;
+        public static connection getConnection(){
+            connection con = null;
             
             try {
                 class.forName(DRIVER);
