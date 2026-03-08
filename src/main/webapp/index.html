@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/reset.css"/>
-        <link rel="stylesheet" href="css/color.css"/>
-        <link rel="stylesheet" href="css/login.css"/>
+        <link rel="stylesheet" href="CSS/reset.css"/>
+        <link rel="stylesheet" href="CSS/color.css"/>
+        <link rel="stylesheet" href="CSS/login.css"/>
         <title>Sistema de estoque</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
-    <body>
-        <form action="login" method="post">
-            <div class="container">
-                <h1>Login</h1>
-                <div>
-                    <label>Usuário</label>
-                    <input type="text" name="users" class="inputUser"/>
-                </div>
-                <div>
-                    <label>Senha</label>
-                    <input type="password" name="passw" class="inputPassword"/>
-                </div>
-                    <button type="submit">Entrar</button>
+
+<body>
+    <header>
+        <div class="box-title">
+        </div>
+    </header>
+    <main>
+    <form action="/login" method="post" class="container">
+        <div class="logo-container">
+            <img src="img/login.png" alt="Sistema de Estoque" onerror="this.style.display='none'">
+        </div>
+
+        <div class="User">
+            <label>Usuário</label>
+            <input type="text" name="users" class="inputUser" placeholder="Informe o Usuário" required />
+        </div>
+
+        <div class="Passsword">
+            <label>Senha</label>
+            <input type="password" name="psw" class="inputPassword" placeholder="Informe a senha" required />
+            
+            <div class="forgot-password">
+                <a href="#">Esqueceu a senha?</a>
             </div>
-        </form>
-    </body>
-</html>
+        </div>
+
+        <div class="box-button">
+            <button type="submit" class="button">Entrar</button>
+        </div>
+        
+        </form> 
+</main>

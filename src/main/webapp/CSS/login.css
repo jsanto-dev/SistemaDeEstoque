@@ -1,9 +1,100 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : 8 de mar. de 2026, 12:58:18
-    Author     : Jhon
-*/
+body {
+    height: 90vh;
+    margin: 0;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-medium));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/*Container principal*/
+.container {
+    background-color: var(--white);
+    padding: 40px;
+    box-shadow: 0px 8px 25px var(--shadow-default);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #666;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1.5px solid var(--gray-medium);
+    background-color: var(--input-bg);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--primary-medium);
+    background-color: var(--white);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(50, 130, 184, 0.1); 
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: var(--success);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background-color: var(--success-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px var(--shadow-strong);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* Centraliza e ajusta o logo */
+.logo-container {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.logo-container img {
+    max-width: 250px;
+}
+
+/* Estiliza o link de recuperação */
+.forgot-password {
+    text-align: right;
+    margin-top: -15px; 
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: var(--primary-medium);
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.forgot-password a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}

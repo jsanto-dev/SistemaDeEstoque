@@ -10,10 +10,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import model.UserModel;
-/**
- *
- * @author Jhon
- */
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet{
@@ -24,7 +20,7 @@ public class LoginServlet extends HttpServlet{
             throws ServletException, IOException {
         
         String usuario = request.getParameter("users");
-        String senha = request.getParameter("passw");
+        String senha = request.getParameter("psw");
         
         UserModel userModel = new UserModel();
         userModel.setUsername(usuario);
@@ -38,7 +34,7 @@ public class LoginServlet extends HttpServlet{
             
             session.setAttribute("usuario", usuario);
             
-            response.sendRedirect("pages/dashboard.html");
+            response.sendRedirect("PAGES/dashboard.html");
         }else{
             response.sendRedirect("index.html");
         }
