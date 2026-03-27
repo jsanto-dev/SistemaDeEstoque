@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/reset.css"/>
+        <link rel="stylesheet" href="../CSS/color.css"/>
+        <link rel="stylesheet" href="../CSS/cadastro.css"/>
+        <title>Cadastro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="header">
+            <h1 id="tituloCadastro"> Sistema de estoque</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Inicio</a></li>
+                    <!--<li><a href="#"></a>Gerenciamento</li> -->
+                </ul>
+            </nav>
+        </header> 
+        <main id="main">
+                <form action="#" method="POST" onsubmit="confirmarCadastro(event)">
+            <!-- <form action="/cadastro" method="POST"> -->
+                <div class="container">
+                    <div class="dadosPessoais">
+                        <label for="nameFirst">Nome<span class="Obrigatorio">*</span></label>
+                        <input type="text" name="nameFirst" id="nameFirst" placeholder="Digite o seu nome" required/> 
+                        <label for="sobrenome">Sobrenome<span class="Obrigatorio">*</span></label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome" required/> 
+                        <label for="matricula">Matricula<span class="Obrigatorio">*</span></label>
+                        <input type="text" name="matricula" id="matricula" placeholder="Digite a sua matricula" required/> 
+                        <label for="cpf">CPF<span class="Obrigatorio">*</span></label>
+                        <input type="text" name="cpf" id="cpf" placeholder="Digite o seu cpf" required/>
+                        <label>Sexo<span class="Obrigatorio">*</span></label>
+                        <select name="sexo" required>
+                            <option value="">Selecione o sexo</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Feminino</option>
+                        </select> 
+                        <label for="dtaNascimento">Data de nascimento<span class="Obrigatorio">*</span></label> 
+                        <input type="date" name="dtaNascimento" id="dtaNascimento" required/>
+                        <label for="email">E-mail<span class="Obrigatorio">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="xxxxxxxxx@xxxx.xxx.xx" required/>
+                        <label for="telefone">Telefone<span class="Obrigatorio">*</span></label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(00)0 0000-0000" required/>
+                        
+                        <label>Função<span class="Obrigatorio">*</span></label>
+                        <select name="funcao" required>
+                            <option value="">Selecione uma função</option>
+                            <option value="gerente">Gerente de Estoque</option>
+                            <option value="operador">Operador / Almocharife</option>
+                        </select>
+
+                    </div> 
+                    <div class="containerEndereco">
+                        <label for="cep">CEP<span class="Obrigatorio">*</span></label>
+                        <input type="text" name="cep" id="cep" required/> 
+                        <label for="endereco">Endereço<span class="Obrigatorio">*</span></label>
+                        <input type="text" name="endereco" id="endereco" required/>
+                        <label for="cidade">Cidade<span class="Obrigatorio">*</span></label>
+                        <input type="text" name="cidade" id="cidade" required/>
+                        <label for="bairro">Bairro<span class="Obrigatorio">*</span></label>
+                        <input type="text" name="bairro" id="bairro" required/>
+                        <label for="numero">Numero<span class="Obrigatorio">*</span></label>
+                        <input type="text" name="numero" id="numero" required/>
+                        <label for="estado">Estado<span class="Obrigatorio">*</span></label>
+                        <input type="text" name="estado" id="estado" required/>
+                        <label for="complemento">Complemento</label>
+                        <input type="text" name="complemento" id="complemento" />
+                    </div>
+                    
+                    
+                    <div class="btn">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <script src="../JS/Formatacao_cadastro.js"></script>
+    </body>
+</html>
